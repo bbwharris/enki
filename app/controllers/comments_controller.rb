@@ -19,7 +19,7 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       format.js do
-        render :partial => 'comment.html.erb'
+        render :partial => 'comment'
       end
     end
   end
@@ -32,7 +32,7 @@ class CommentsController < ApplicationController
 
     if @comment.requires_openid_authentication?
       session[:pending_comment] = params[:comment]
-      return if authenticate_with_open_id(@comment.author, 
+      return if authenticate_with_open_id(@comment.author,
           :optional => [:nickname, :fullname, :email]
         ) do |result, identity_url, registration|
 

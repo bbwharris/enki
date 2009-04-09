@@ -22,7 +22,7 @@
 -form_for([@post, @comment]) do |f|
   %div
     %p
-      =f.text_field :author
+      =f.text_field :author, :class => 'textfield'
       =f.label :comment_author
       %small
         Name or

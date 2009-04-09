@@ -1,16 +1,16 @@
 %h2
-  =link_to(h(post.title), post_path(post))
-  
+  %a{:href => post_path(post)}=h(post.title)
 .entrybody
+  .date
+    %p.month=post.published_at.strftime('%b')
+    %p.day=post.published_at.strftime('%d')
   =post.body_html.untaint
-.meta
-  %ul
-    %li.date
-      Posted on
-      =format_post_date(post.published_at)
-    %li.comments
-      =link_to(pluralize(post.approved_comments.size,"comment"), post_path(post,:anchor => 'comments'))
-    -unless post.tags.empty?
-      %li.tags
-        Tagged
-        =linked_tag_list(post.tags)
+  .meta.right
+    %ul
+      %li.comments
+        %a{:href => post_path(post, :anchor => 'comments')}=pluralize(post.approved_comments.size,"comment")
+      -unless post.tags.empty?
+        %li.tags
+          Tagged
+          =linked_tag_list(post.tags)
+  .right_clear

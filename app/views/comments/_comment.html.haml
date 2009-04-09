@@ -1,7 +1,7 @@
-%cite
-  =author_link(comment)
-  says
+%cite=author_link(comment)
+says
+%br/
 %small.commentmetadata
-  %a{:href => "#comment-#{comment.id}", :title => ""}
-  =format_comment_date(comment.created_at)
-  %p=comment.body_html.untaint
+  %a{:href => "#comment-#{comment.id}", :title => ""}=format_comment_date(comment.created_at)
+:plain
+  <p>#{comment.body_html.untaint}</p>
