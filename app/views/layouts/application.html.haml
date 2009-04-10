@@ -42,7 +42,19 @@
               %ul
                 -category_links_for_navigation.each do |link|
                   %li=link_to(link.name, link.url)
-
+          #ad_sense
+            :plain
+              <script type="text/javascript"><!--
+                google_ad_client = "pub-5404691442707851";
+                /* 120x240, created 4/10/09 */
+                google_ad_slot = "4541708055";
+                google_ad_width = 120;
+                google_ad_height = 240;
+                //-->
+              </script>
+              <script type="text/javascript"
+                src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+              </script>
       #footer
         &#169;
         =config[:author, :name]

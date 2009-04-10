@@ -41,7 +41,7 @@
         float: right; }
         #wrapper #container #content #sub ul {
           list-style: none; }
-        #wrapper #container #content #sub #search, #wrapper #container #content #sub #pages {
+        #wrapper #container #content #sub #search, #wrapper #container #content #sub #pages, #wrapper #container #content #sub #categories {
           background: url(/images/sep.png) no-repeat scroll center bottom;
           padding-bottom: 2em; }
         #wrapper #container #content #sub #twitter_div {
