@@ -180,6 +180,8 @@ div.errors {
   margin: 5px 0 10px 15px; }
   .entrybody p {
     margin: 10px 10px 10px 70px; }
+  .entrybody table {
+    margin: 10px 10px 10px 70px; }
 
 .date {
   float: left;
@@ -309,7 +311,7 @@ pre.ruby .string {
 
 table.CodeRay {
   border-collapse: collapse;
-  width: 100%;
+  width: 85%;
   padding: 2px;
   table-layout: fixed; }
   table.CodeRay td {
