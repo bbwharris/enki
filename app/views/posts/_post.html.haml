@@ -4,7 +4,8 @@
   .date
     %p.month=post.published_at.strftime('%b')
     %p.day=post.published_at.strftime('%d')
-  =post.body_html.untaint
+  :plain
+    #{post.body_html.untaint}
   .meta.right
     %ul
       %li.comments
