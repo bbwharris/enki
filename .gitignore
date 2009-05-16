@@ -1,2 +1,7 @@
+log/**/*
+log
+tmp/**/*
 tmp
 *.cache
+config/database.yml
+db/schema.rb
