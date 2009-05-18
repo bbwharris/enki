@@ -20,7 +20,7 @@
     
   -if flash[:notice]
     %script
-      jQuery(document).ready(function() {humanMsg.displayMsg('=escape_javascript(h(flash[:notice]))');})
+      jQuery(document).ready(function() {humanMsg.displayMsg('=#{escape_javascript(h(flash[:notice]))}');})
 %body
   #page
     #content
