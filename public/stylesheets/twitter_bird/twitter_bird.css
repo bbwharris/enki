@@ -1,0 +1,40 @@
+#twitter_bird {
+  background: transparent url(/images/twitter_bird/light_back_bird.png) no-repeat;
+  background-position: 174px -5px;
+  min-height: 80px;
+  font-size: .9em;
+  position: relative;
+  padding: 0 0 20px 0;
+}
+  #twitter_bird #tweet_top {
+    background: transparent url(/images/twitter_bird/bubble_top.png) no-repeat;
+    height: 14px;
+  }
+  #twitter_bird #tweet {
+    background: transparent url(/images/twitter_bird/bubble_mid.png) repeat-y;
+  }
+    #twitter_bird #tweet .text {
+      background: transparent url(/images/twitter_bird/lquote.png) no-repeat;
+      width: 145px;
+      position: relative;
+      top: -6px;
+      left: 2px;
+      padding-left: 20px;
+      padding-top: 6px;
+    }
+      #twitter_bird #tweet .text img.rquote {
+        position: relative;
+        vertical-align: bottom;
+        top: 4px;
+      }
+  #twitter_bird #tweet_bottom {
+    background: transparent url(/images/twitter_bird/bubble_bottom.png) no-repeat;
+    height: 15px;
+  }
+  #twitter_bird .posted_at {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: .8em;
+    width: 200px;
+  }

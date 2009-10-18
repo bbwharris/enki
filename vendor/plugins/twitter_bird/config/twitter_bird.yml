@@ -1,0 +1,21 @@
+development:
+  user_id: 70403567
+  domain: twitter.com
+  path: statuses/user_timeline
+  expire: 10
+  timeout: 1
+  username: GetUpstream 
+staging:
+  user_id: 70403567
+  domain: twitter.com
+  path: statuses/user_timeline
+  expire: 10
+  timeout: 1
+  username: GetUpstream
+production:
+  user_id: 70403567
+  domain: twitter.com
+  path: statuses/user_timeline
+  expire: 10
+  timeout: 1
+  username: GetUpstream

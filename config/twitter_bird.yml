@@ -1,0 +1,21 @@
+development:
+  user_id: 18639058
+  domain: twitter.com
+  path: statuses/user_timeline
+  expire: 10
+  timeout: 1
+  username: bbwharris
+staging:
+  user_id: 18639058
+  domain: twitter.com
+  path: statuses/user_timeline
+  expire: 10
+  timeout: 1
+  username: bbwharris
+production:
+  user_id: 18639058
+  domain: twitter.com
+  path: statuses/user_timeline
+  expire: 10
+  timeout: 1
+  username: bbwharris

@@ -1,0 +1,23 @@
+TwitterBird
+===========
+
+Creates a model to cache Tweets since twitter fails all the time.
+Provides a helper that outputs the typical tweet area and takes care of caching.
+Installs a twitter_bird CSS file as well.
+
+Install
+=======
+
+Simply install the plugin
+script/generate twitter_bird_migration
+rake db:migrate
+Edit config/twitter_bird.yml
+
+Then use
+=twitter_bird
+
+in your views.
+
+Modify the CSS file to your liking.
+
+Copyright (c) 2009 Jonathan Spies, released under the MIT license
