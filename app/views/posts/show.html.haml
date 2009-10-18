@@ -28,6 +28,9 @@
         Name or
         %a{:href => "http://openidexplained.com"} OpenID
         (required)
+    %p.haha
+      =f.text_field :alphabet, :class => 'textfield'
+      =f.label :alphabet, "Alphabet, humans should ignore."
     %p=f.text_area :body
     %br/
     %small

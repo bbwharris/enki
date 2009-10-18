@@ -8,7 +8,8 @@ class CommentsController < ApplicationController
   before_filter :find_post, :except => [:new]
 
   def index
-    if request.post? || using_open_id?
+    spam = params[:comment] ? params[:comment][:alphabet] : nil
+    if (spam.nil? or spam.blank?) and (request.post? || using_open_id?)
       create
     else
       redirect_to(post_path(@post))

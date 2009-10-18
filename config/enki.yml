@@ -1,6 +1,6 @@
 # Configuration options for your blog - customise to taste
 # This file contains no secret information, so can be stored in source control (unlike database.yml)
-title: Brandon Harris
+title: A Developing Rant by Brandon Harris
 url:   http://brandon-harris.com
 author: 
   name:    Brandon Harris        # For copyright notice and ATOM feeds

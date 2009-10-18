@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081224020432) do
+ActiveRecord::Schema.define(:version => 20091018175328) do
 
   create_table "comments", :force => true do |t|
     t.integer  "post_id",      :null => false
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20081224020432) do
     t.text     "body_html",    :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "alphabet"
   end
 
   add_index "comments", ["created_at"], :name => "index_comments_on_created_at"
@@ -93,6 +94,14 @@ ActiveRecord::Schema.define(:version => 20081224020432) do
   end
 
   add_index "tags", ["name"], :name => "index_tags_on_name"
+
+  create_table "tweets", :force => true do |t|
+    t.string   "text"
+    t.string   "twitter_username"
+    t.datetime "twitter_update_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "undo_items", :force => true do |t|
     t.string   "type",       :null => false
